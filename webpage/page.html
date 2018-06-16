@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>home page</title>
+        <link rel="stylesheet" type="text/css" href="page.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <script src="gua.js"></script>
+    </head>
+    <body>
+        <div class="mao-header">
+            <nav class="mao-nav">
+                <ul class="mao-nav-ul">
+                    <li>
+                        <a href="#"><i class="fa fa-forumbee fa-2x"></i></a>
+                    </li>
+                    <!-- <li><img src="img/tutu.png" alt=""></li> -->
+                    <li class=""><a href="#">首页</a></li>
+                    <li class="mao-nav-product">
+                        <a href="#">产品<i class="fa fa-arrow-down fa-1g"></i></a>
+                        <div id="id-div-container">
+                            <ul class="mao-container-ul">
+                                <li data-index='0' class="mao-container-li">
+                                    <span id="mao-list-0"><i class="cf fa fa-envira fa-1g"></i>产品1&nbsp;</span>
+                                </li>
+                                <li data-index='1'  class="mao-container-li">
+                                    <span id="mao-list-1"><i class="cf fa fa-modx fa-1g"></i>产品2&nbsp;</span>
+                                </li>
+                                <li data-index='2'  class="mao-container-li">
+                                    <span id="mao-list-2"><i class="cf fa fa-dribbble fa-1g"></i>产品3&nbsp;</span>
+                                </li>
+                                <li data-index='3'  class="mao-container-li">
+                                    <span id="mao-list-3"><i class="cf fa fa-yelp fa-1g"></i>产品4&nbsp;</span>
+                                </li>
+                                <li data-index='4'  class="mao-container-li">
+                                    <span id="mao-list-4"><i class="cf fa fa-reddit-alien fa-1g"></i>产品5&nbsp;</span>
+                                </li>
+                                <li data-index='5'  class="mao-container-li">
+                                    <span id="mao-list-5"><i class="cf fa fa-wpexplorer fa-1g"></i>产品6&nbsp;</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class=""><a href="#">精选</a></li>
+                    <li class=""><a href="#">论坛</a></li>
+                    <li class=""><a href="#">宝库</a></li>
+                    <li class=""><a href="#">哈哈</a></li>
+                    <li class=""><a href="#">哈哈</a></li>
+                    <li class="search">
+                        <input class="mao-search" type="text" name="" value="">
+                        <i class="fa fa-search fa-2x"></i>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="id-div-list" class="">
+                <div id="id-list-0" class="mao-list">
+                    <ul>
+                        <li>1111</li>
+                    </ul>
+                </div>
+                <div id="id-list-1" class="mao-list">
+                    <ul>
+                        <li>222</li>
+                    </ul>
+                </div>
+                <div id="id-list-2" class="mao-list">
+                    <ul>
+                        <li>333</li>
+                    </ul>
+                </div>
+                <div id="id-list-3" class="mao-list">
+                    <ul>
+                        <li>444</li>
+                    </ul>
+                </div>
+                <div id="id-list-4" class="mao-list">
+                    <ul>
+                        <li>555</li>
+                    </ul>
+                </div>
+                <div id="id-list-5" class="mao-list">
+                    <ul>
+                        <li>666</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mao-time">
+                <pre id="clock"></pre>
+                <pre id="myDate"></pre>
+                <pre id="leftTime" ></pre>
+            </div>
+        </div>
+        <div class="picture">
+            <div class="mao-picture">
+                <!-- <div class="box">
+                    <img class="" src="img/picture-1.jpg">
+                </div> -->
+                <img class="small" src="img/picture-1.jpg">
+                <img class="small" src="img/picture-2.jpg">
+                <img class="small" src="img/picture-3.jpg">
+                <img class="small" src="img/picture-4.jpg">
+            </div>
+            <div class="mao-popup">
+                <i class="fa fa-close fa-2x"></i>
+                <img class="big" src="img/picture-1.jpg" alt="">
+            </div>
+        </div>
+        <div class="gua">
+            <!-- data-imgs 是图片的总数 -->
+            <!-- data-active 是当前显示的图片的下标 -->
+            <div class="gua-slide" data-imgs="4" data-active="0">
+                <img id=id-guaimage-0 class="gua-slide-image gua-active" src="img/1.jpg" alt="">
+                <img id=id-guaimage-1 class=gua-slide-image src="img/2.jpg" alt="">
+                <img id=id-guaimage-2 class=gua-slide-image src="img/3.jpg" alt="">
+                <img id=id-guaimage-3 class=gua-slide-image src="img/4.jpg" alt="">
+                <!--
+                要在 html 里面表示 < > 这些特殊符号的时候, 必须使用 HTML 转义符号
+                &lt; 代表 <
+                -->
+                <button class="gua-slide-button gua-left gua-vertical-center"
+                        data-offset="-1"> &lt; </button>
+                <button class="gua-slide-button gua-right gua-vertical-center"
+                        data-offset="1"> &gt; </button>
+                <div class="gua-slide-indicators">
+                    <div id='id-indi-0'class="gua-slide-indi gua-white"
+                        data-index='0'></div>
+                    <div id='id-indi-1' class="gua-slide-indi"
+                        data-index='1'></div>
+                    <div id='id-indi-2' class="gua-slide-indi"
+                        data-index='2'></div>
+                    <div id='id-indi-3' class="gua-slide-indi"
+                        data-index='3'></div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footer-wp">
+                <ul class="pg-postcards">
+                    <li>
+                        <div class="cards">
+                            <a href="#">关于我们</a>
+                        </div>
+                        <div class="cards">
+                            <a href="#">关于我们</a>
+                        </div>
+                        <div class="cards">
+                            <a href="#">关于我们</a>
+                        </div>
+                        <div class="cards">
+                            <a href="#">关于我们</a>
+                        </div>
+                        <div class="cards">
+                            <a href="#">关于我们</a>
+                        </div>
+                        <div class="cards">
+                            <a href="#">关于我们</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cards">
+                            <a href="#">heiheihei</a>
+                        </div>
+                        <div class="cards">
+                            <a href="#">heiheihei</a>
+                        </div>
+                        <div class="cards">
+                            <a href="#">heiheihei</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <script src="page.js"></script>
+    </body>
+</html>
