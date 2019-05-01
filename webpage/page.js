@@ -60,7 +60,7 @@ var showTime = function() {
     e('#clock').innerText = hours + ':' + minutes
     e('#myDate').innerText = year + ' 年 ' + month + ' 月 ' + date + ' 日'
     // 到指定日期剩余的时间
-    var endtime = new Date("2019/1/1,0:0:0")
+    var endtime = new Date("2020/1/1,0:0:0")
     var lefttime = parseInt((endtime.getTime() - nowtime.getTime())/1000)
     var d = parseInt(lefttime/3600/24)
     var h = parseInt((lefttime/3600)%24)
